@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python36
 #############################################################################
 #                                                                           #
 #                       Copyright 2020 Maria Nisar.                         #
@@ -14,8 +14,8 @@ Module to Download Files.
 '''
 import pymysql
 from app import app
-from db_config import mysql
 from flask import jsonify
+from db_config import mysql
 
 
 @app.route('/downloads')

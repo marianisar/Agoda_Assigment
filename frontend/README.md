@@ -24,6 +24,7 @@ git clone https://github.com/fartashh/Agoda_Test_Downloader
  - Flask
  - Flask-RESTful
  - Flask-MySQL
+ - Flask-Cors
 
 ### Installing
 

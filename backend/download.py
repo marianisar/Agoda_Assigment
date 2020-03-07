@@ -96,7 +96,7 @@ class Downloader(object):
         @param data: list of file data. (list)
         @return: True if batch processed successfully else False. (boolean)
         """
-        if data is None:
+        if data[0] is None:
             return True
         self.connect_to_db()
         tablename = 'data'
@@ -135,13 +135,13 @@ class Downloader(object):
                 open_url = urlopen(url, context=CTX)
                 start_time = datetime.now()
                 s_time = int(time.time())
-                with open(filename, 'w') as file:
+                with open(filename, 'wb') as file:
                     while True:
                         chunk = open_url.read(8192)
                         if not chunk:
                             break
                         file_size += len(chunk)
-                        file.write(chunk.decode("utf-8"))
+                        file.write(chunk)
                 # Validate downloaded file
                 self.logger.info('validating downloaded file ...')
                 if os.path.getsize(filename) == file_size:
@@ -171,8 +171,8 @@ class Downloader(object):
                         'end_time':           datetime.now(),
                         'protocol':           urlparse(url).scheme,
                         'data_type':          'not downloaded',
-                        'download_speed':     '0',
-                        'failure_percentage': failures,
+                        'download_speed':     'slow',
+                        'failure_percentage': '100',
                         'status':             'Downloading Failed',
                     }
                 return data
