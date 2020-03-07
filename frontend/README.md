@@ -35,7 +35,7 @@ git clone https://github.com/fartashh/Agoda_Test_Downloader
 
 ```
 For Databse configuration use the default configurations which will create after running the 
-"backend/config.sql" file or you can change in "front_end/db_config" file
+"backend/config.sql" file or you can change in "frontend/db_config" file
 
     app.config['MYSQL_DATABASE_USER'] = 'agoda'             (user name)
     app.config['MYSQL_DATABASE_PASSWORD'] = 'Snx@D3fault'   (password)
