@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Installing
 
 ```
-git clone https://github.com/fartashh/Agoda_Test_Downloader
+git clone https://github.com/marianisar/Agoda_Assigment.git
 ```
 
 ## Database creation
