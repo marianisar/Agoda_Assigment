@@ -22,9 +22,9 @@ class DownloadTestCase(unittest.TestCase):
         self.downloader = Downloader()
 
     def test_http_protocol(self):
-        url = "https://github.com/CaliDog/certstream-python.git"
+        url = "https://github.com/CaliDog/certstream-python/archive/master.zip "
         file_name = url.split('/')[-1]
-        size = 103835
+        size = 17347
         self.downloader.download_files(url)
         file_path = os.path.join(self.downloader.download_path, file_name)
         self.assertEqual(os.path.getsize(file_path), size)
