@@ -13,10 +13,10 @@ considerations:
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Installing
+### Installing
 
 ```
-git clone https://github.com/fartashh/Agoda_Test_Downloader
+git clone https://github.com/marianisar/Agoda_Assigment.git
 ```
 
 ### Prerequisites
@@ -26,11 +26,7 @@ git clone https://github.com/fartashh/Agoda_Test_Downloader
  - Flask-MySQL
  - Flask-Cors
 
-### Installing
 
-```
-git clone https://github.com/marianisar/Agoda_Assigment.git
-```
 
 ## Configurations
 
