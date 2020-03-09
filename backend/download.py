@@ -71,6 +71,7 @@ class Downloader(object):
 
     def validate_downloads_path(self):
         """
+        Check if download path exist or not (create if not).
         @return: None
         """
         if not os.path.exists(self.download_path):
